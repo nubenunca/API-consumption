@@ -30,10 +30,6 @@ document.addEventListener("DOMContentLoaded", async ()=>{
 
 
 
-
-
-
-
 const getAllProducts = async(): Promise<IResponseEcomerce[]> =>{
     const response = await fetch('https://fakestoreapi.com/products/')
     let data: IResponseEcomerce[] = await response.json();
